@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>计划 | Neo的博客</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><meta name="generator" content="Hexo 4.1.1"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">计划</h1><a id="logo" href="/.">Neo的博客</a><p class="description">无安全不自由 这是一个专注信息安全的博客</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">计划</h1><div class="post-meta">Mar 15, 2019</div><div class="post-content"><ul>
+<li><p>KaliLinux 学习记录</p>
+</li>
+<li><p>安全业界资讯</p>
+<ul>
+<li>flash player大陆定制版和重橙科技 </li>
+</ul>
+</li>
+<li><p>工具和技巧</p>
+</li>
+<li><p>教程</p>
+</li>
+<li><p>运维知识</p>
+<ul>
+<li><p><strong>操作系统日志:</strong></p>
+<p>查看整体系统日志: <strong>/var/log/messages</strong><br>查看授权和认证信息:<strong>/var/log/secure</strong></p>
+</li>
+<li><p><strong>服务器操作系统类型/版本/补丁版本</strong></p>
+<p>查看内核版本：<code>cat /proc/version</code>  <code>uname -a</code><br>   查看linux系统发行版本 <code>lsb_release -a</code>（适用于所有的Linux发行版本）  <code>cat /etc/redhat-release</code>（只适用于redhat系列）<br>  <em>注：LSB（Linux Standards Base）是一个Linux标准化组织。</em><br>   安装 lsb_release: </p>
+<ul>
+<li>查找适合<code>lsb——release</code>命令的安装包：<code>yum provides */lsb_release</code></li>
+</ul>
+</li>
+<li><p><strong>内存和CPU实时使用统计</strong></p>
+<p>命令：<code>top</code> ,实际使用中推荐安装<code>htop</code>更好用 </p>
+<blockquote>
+<p>htop使用详解【<a href="https://blog.csdn.net/skh2015java/article/details/53173896】" target="_blank" rel="noopener">https://blog.csdn.net/skh2015java/article/details/53173896】</a></p>
+</blockquote>
+</li>
+<li><p><strong>硬盘信息</strong><br><code>df -h</code> –查看磁盘容量中使用情况<br><code>fdisk -l</code> 查看磁盘分区信息</p>
+</li>
+<li><p><strong>网络配置</strong></p>
+<p>  查看网络信息 <code>cat /etc/sysconfig/network-scripts/ifcfg-eth0</code><br> 这方面资料很多 <a href="https://www.cnblogs.com/lcword/p/8094345.html" target="_blank" rel="noopener">https://www.cnblogs.com/lcword/p/8094345.html</a></p>
+<blockquote>
+<p>故障记录<br>维护记录</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>服务器硬件维护</p>
+<ul>
+<li>硬件检查</li>
+<li>存储设备扩充</li>
+<li>设备卸载和更换</li>
+<li>除尘</li>
+<li>定时重启</li>
+</ul>
+<p>网络服务维护<br>服务器日志维护<br>磁盘检查维护<br>杀毒软件和操作系统补丁更新维护<br>服务器数据备份<br>定期的密码更改<br>服务器日常监控</p>
+</li>
+<li><p>安全基础知识</p>
+<ul>
+<li><p>基线检查<br>   服务器安全基线检解析（转载）  <a href="http://sec.chinabyte.com/218/14308718.shtml?S=5fpznk9km0h" target="_blank" rel="noopener">http://sec.chinabyte.com/218/14308718.shtml?S=5fpznk9km0h</a><br>   基线检查：Linux的加固和检测(转载) <a href="https://www.yflad.cn/1678.html" target="_blank" rel="noopener">https://www.yflad.cn/1678.html</a><br>  entos7基线检查脚本（转载） <a href="https://www.cnblogs.com/pythonal/p/10025224.html" target="_blank" rel="noopener">https://www.cnblogs.com/pythonal/p/10025224.html</a><br>  linux下如何使用vnstat查看服务器带宽流量统计</p>
+</li>
+<li><p>流量统计<br>  使用vnstat查看服务器带宽流量统计 <a href="https://www.cnblogs.com/wangchuanyang/p/6286126.html" target="_blank" rel="noopener">https://www.cnblogs.com/wangchuanyang/p/6286126.html</a></p>
+</li>
+<li><p>主流网络设备的日常维护</p>
+</li>
+<li><p>网络故障排除及网络攻击分析</p>
+</li>
+<li><p>IPSec</p>
+</li>
+<li><p>各大安全厂商产品</p>
+</li>
+<li></li>
+<li><p>恶意代码检测和分析</p>
+</li>
+<li><p>网络安全产品，如防火墙、IDS、防病毒，漏洞评估工具</p>
+<p>服务器日常监控</p>
+</li>
+</ul>
+</li>
+<li><p>通信网络知识</p>
+<ul>
+<li>大型发布会现场的 Wi-Fi 应该如何搭建？ <a href="https://www.zhihu.com/question/20890194" target="_blank" rel="noopener">https://www.zhihu.com/question/20890194</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="tags"></div><div class="post-nav"><a class="pre" href="/2019/04/15/%E7%AD%89%E4%BF%9D%E6%B5%8B%E8%AF%84%EF%BC%88%E4%B8%80%EF%BC%89/">等保测评（一）</a><a class="next" href="/2019/03/13/tor%E5%8A%A0%E5%89%8D%E7%BD%AE%E4%BB%A3%E7%90%86%E6%B5%81%E9%87%8F%E7%A4%BA%E6%84%8F%E5%9B%BE/">tor加前置代理流量示意图</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="https://neoeo.github.io"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/linux/" style="font-size: 15px;">linux</a> <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 15px;">防火墙</a> <a href="/tags/%E7%AD%89%E4%BF%9D%E6%B5%8B%E8%AF%84/" style="font-size: 15px;">等保测评</a> <a href="/tags/%E6%94%BB%E5%87%BB/" style="font-size: 15px;">攻击</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/12/18/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/05/%E7%BC%93%E5%86%B2%E5%8C%BA%E6%BA%A2%E5%87%BA%E7%9A%84%E5%8D%B1%E5%AE%B3/">缓冲区溢出的危害</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/05/%E4%B8%8B%E4%B8%80%E4%BB%A3%E9%98%B2%E7%81%AB%E5%A2%99%E7%9A%84%E4%BC%98%E5%8A%BF/">下一代防火墙的优势</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/24/firewall-cmd/">firewall-cmd</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/16/%E7%AD%89%E7%BA%A7%E4%BF%9D%E6%8A%A4%E5%B7%A5%E4%BD%9C%E9%80%9F%E8%AF%86%E7%A7%98%E7%B1%8D/">等级保护工作速识秘籍</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/15/%E7%AD%89%E4%BF%9D%E6%B5%8B%E8%AF%84%EF%BC%88%E4%B8%80%EF%BC%89/">等保测评（一）</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/03/15/%E5%86%99%E4%BD%9C%E5%A4%A7%E7%BA%B2/">计划</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/03/13/tor%E5%8A%A0%E5%89%8D%E7%BD%AE%E4%BB%A3%E7%90%86%E6%B5%81%E9%87%8F%E7%A4%BA%E6%84%8F%E5%9B%BE/">tor加前置代理流量示意图</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/03/13/%E8%8C%85%E5%B1%8B%E4%B8%BA%E7%A7%8B%E9%A3%8E%E6%89%80%E7%A0%B4%E6%AD%8C/">茅屋为秋风所破歌</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2019 <a href="/." rel="nofollow">Neo的博客.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>

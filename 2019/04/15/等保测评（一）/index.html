@@ -1,0 +1,199 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>等保测评（一） | Neo的博客</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><meta name="generator" content="Hexo 4.1.1"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">等保测评（一）</h1><a id="logo" href="/.">Neo的博客</a><p class="description">无安全不自由 这是一个专注信息安全的博客</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">等保测评（一）</h1><div class="post-meta">Apr 15, 2019</div><div class="post-content"><p><strong>等保测评实施指南</strong></p>
+<ul>
+<li><p><strong>五个阶段</strong></p>
+<p>  定级、备案、开展等级测评、系统建设整改、监督检查</p>
+</li>
+<li><p><strong>系统定级阶段</strong></p>
+<p>  等级保护对象定级工作的一般流程如下：</p>
+<p>  确定定级对象–&gt;初步确定等级–&gt;专家评审–&gt;主管部门审核–&gt;公安机关备案审查</p>
+<p>  其中“专家评审”：定级对象的运营、使用单位应组织信息安全专家和业务专家等，对初步定级结果的合理性进行评审，出具专家评审意见。</p>
+<p>  “主管部门审核”：定级对象的运营、使用单位应将初步定级结果上报行业主管部门或上级主管部门进行审核。</p>
+<p>  未来定级流程将新增“专家评审”和“主管部门审核”两个环节，这样定级过程将会变得更加规范，定级也会更加准确，有意将系统等级定的低的情况将会越来越少，专家们和主管部门都要签字的，笔者认为专家们签字的时候一定会慎重的，定级不合理的一定会提出修改意见的。所以将来的定级过程将变得更加复杂。以前定级叫“自主定级”，将来的定级不得不等称之为“规范定级”。规范定级带来的最大变化就是定级更加合理，更加准确。一个比较重要的省级行业用户连一个三级系统都没有，这种情况常有，未来一定会越来越少，直至没有。合理定级是开展等级保护工作最重要的一步。</p>
+</li>
+<li><p><strong>等级划分</strong></p>
+<p>  第一级，信息系统受到破坏后，会对公民、法人和其他组织的合法权益造成损害，但不损害国家安全、社会秩序和公共利益。</p>
+<p>  第二级，信息系统受到破坏后，会对公民、法人和其他组织的合法权益产生严重损害，或者对社会秩序和公共利益造成损害，但不损害国家安全。</p>
+<p>  第三级，信息系统受到破坏后，会对社会秩序和公共利益造成严重损害，或者对国家安全造成损害。 新修订定级指南对公民、法人和其他组织的合法权益造成特别严重损害。</p>
+<p>  第四级，信息系统受到破坏后，会对社会秩序和公共利益造成特别严重损害，或者对国家安全造成严重损害。</p>
+<p>  第五级，信息系统受到破坏后，会对国家安全造成特别严重损害。</p>
+</li>
+</ul>
+<ul>
+<li><p><strong>需要熟悉的内容</strong></p>
+<p>  结构安全：</p>
+<p>  绘制网络拓扑结构图</p>
+<p>  确保带宽足够</p>
+<p>  确保网络设备性能足够</p>
+<p>  操作系统最小安装</p>
+<p>  常见的放恶意代码软件</p>
+<p>  运行日志和网络监控记录的存放位置</p>
+<p>  vlan的划分命令！</p>
+<p>  数据完整性检测</p>
+<p>  交换机路由器配置策略的备份</p>
+<p>  口令更新周期</p>
+<p>  安全策略、日志的保存周期</p>
+<p>  应急预案是怎样的</p>
+<p>  如何监视以下行为：端口扫描、强力攻击、木马后门攻击、拒绝服务攻击、缓冲区溢出攻击、IP碎片攻击、蠕虫网络攻击</p>
+<p>  发现入侵时是如何报警的</p>
+<p>  身份鉴别方法的组合</p>
+<p>  安全审计？如何实现审计过程不被中断、删除、修改、覆盖</p>
+<p>  系统性能下降时报警时是如何实现的</p>
+<p>  访问控制策略如何制定</p>
+<p>  会话的超时自动结束、并发连接数限制、最大尝试登陆次数限制</p>
+<p>  备份和恢复在等保各级别的要求中的区别：关键网络设备的硬件冗余  第三级要求：完整数据至少每日备份一次。本地&amp;异地备份，网络拓扑冗余-防止单点故障</p>
+<p>  常见的网络安全设备端口类型</p>
+<p>  如何检测系统拓扑中是否存在<strong>单点故障</strong>隐患</p>
+<p>  网段怎样划分才合理</p>
+<p>  三级系统的测试验收要求：</p>
+</li>
+<li><p><strong>测试验收（G3）</strong></p>
+<p>  本项要求包括：</p>
+<ol>
+<li><p>应委托公正的第三方测试单位行安全性测试， 并出具安全性测试报告；</p>
+</li>
+<li><p>在测试验收前应根据设计方案或合同要求等制订测试验收方案，在测试验收过程中应详细记录</p>
+</li>
+<li><p>测试验收结果，并形成测试验收报告；</p>
+</li>
+<li><p>应对系统测试验收的控制方法和人员行为准则进行书面规定；</p>
+</li>
+<li><p>应指定或授权专门的部门负责系统测试验收的管理，并按照管理规定的要求完成系统测试验收工作；</p>
+</li>
+<li><p>应组织相关部门和相关人员对系统测试验收报告进行审定，并签字确认。        </p>
+</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li>*<em>常见的安全加固措施 *</em></li>
+</ul>
+<h4 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h4><ul>
+<li><p><strong>三级系统等级测评每年一次，二级系统两年一次？？</strong></p>
+<p>   根据《信息安全等级保护管理办法》中的第十四规定，第三级信息系统应当每年至少进行一次等级测评；第二级不强制要求测评，但是要求定期找测评机构测评或进行系统自测，但是在电力行业，等保二级系统的测评周期明确要求是两年，其他行业只是建议。</p>
+</li>
+</ul>
+<h4 id="实施步骤"><a href="#实施步骤" class="headerlink" title="实施步骤"></a>实施步骤</h4><ol>
+<li><p>访谈</p>
+<p> 需要能够和网络管理员无障碍沟通</p>
+<p> 要求：具备网络基础知识-掌握HCNP的知识</p>
+<p> 了解常见的网络安全设备，常用术语。</p>
+</li>
+</ol>
+<ol start="2">
+<li><p>输出成果:</p>
+<ol>
+<li>会议记录</li>
+<li>确认的风险告知书</li>
+<li>测评方案和现场测评工作计划</li>
+<li>技术和管理安全测评的测评结果记录</li>
+<li>管理安全的测评结果记录</li>
+<li>技术安全测评的网络、系统、应用测评结果记录</li>
+<li>工具测试完成后的电子输出记录</li>
+<li>备份的测试结果文件</li>
+<li>物理安全和管理安全测评结果记录</li>
+<li>经过测评委托单位确认的测评证据和证据源记录</li>
+</ol>
+</li>
+</ol>
+<h4 id="术语名词解释"><a href="#术语名词解释" class="headerlink" title="术语名词解释"></a>术语名词解释</h4><ol>
+<li><p>ARP地址欺骗</p>
+</li>
+<li><p>权限分离</p>
+</li>
+<li><p>剩余信息保护(从硬盘和内存中彻底清除关键用户的鉴别信息)</p>
+</li>
+<li><p>APT防护<br> APT,高级持续性威胁(Advanced Persistent Threat)是黑客以窃取核心资料为目的，针对客户所发动的网络攻击和侵袭行为，是一种蓄谋已久的“恶意商业间谍威胁”<br> APT防御产品，主要针对APT攻击中广泛采用的ODAY/NDAY漏洞及各种攻击行为，能够通过云平台、大数据分析、多引擎分析等方法实现对APT攻击行为检测的全面覆盖    </p>
+</li>
+<li><p>流量回溯<br> 有了网络协议和网络应用的鉴别，就能梳理网内的正常流量，发现异常数据类型和流量；有了异常检测方法，就能够通过对各类网络行为建模，实现对未知攻击行为的检测；有了原始流量的存储，就能够将当前检测到的攻击行为与历史流量进行关联，实现完整的攻击溯源和取证分析。<br> 全流量回溯成为等级保护2.0时代的必备工具<br> 等保2.0，三级系统应检查是否部署网络回溯，对新型网络攻击进行检测和分析，应检测是否对网络行为进行分析</p>
+</li>
+<li><p>可信计算<br> 可信计算的基本思想是，首先在计算机系统中构建一个信任根····（这个根，对于个人用户而言是无条件信任的，强制的）<br> 可信计算包括5个核心技术概念，在一个完全可信的系统中它们都是必须的。</p>
+<ul>
+<li><p>认证密钥</p>
+</li>
+<li><p>安全输入输出</p>
+</li>
+<li><p>内存屏蔽/受保护执行</p>
+</li>
+<li><p>封装存储</p>
+</li>
+<li><p>远程证明</p>
+<p>  <strong>可信计算的反对者指出：</strong>保护计算机不受病毒和攻击者影响的安全机制，同样会限制其属主的行为。他们指出这将使得强制性垄断成为可能，从而会伤害那些购买可信计算机的人们。<br>  剑桥大学的密码学家Ross Anderson非常关切的一个问题是”可信计算可能支持远程审查[…] 一般而言，支持可信计算的计算机系统的属主所创建的数字对象将始终受到其控制，而非那些控制数字对象存储在的计算机的人[…] 所以，如果有人写了被法庭认定为诽谤的文章，作者将被迫进行审查—并且如果作者拒绝，编写文字处理软件的公司可能被命令删除该文章。在这种可能之下，我们可以预料可信计算将被用于压制包括色情文学到对政治领导人的批评在内的任何事”</p>
+</li>
+</ul>
+</li>
+<li><p>堡垒机<br> 堡垒机是一种运维安全审计系统。主要的功能是对运维人员的运维操作进行审计和权限控制。同时堡垒机还有账号集中管理，单点登陆的功能。</p>
+</li>
+<li><p>数据库审计<br>  绿盟数据库审计系统-NSFOCUS Database Audit System（简称DAS）是能够实时监视、记录网络上的数据库活动，对数据库操作进行细粒度审计的合规性管理系统。它通过对用户访问数据库行为的记录、分析和汇报，用来帮助用户事后生成合规报告、事故追根溯源，同时加强内外部网络行为记录，提高数据资产安全。</p>
+<p>  DAS是一款专业、实时进行数据库访问监视与审计的数据库安全设备。能够多角度分析数据库活动，并对异常的行为具有告警通知、审计记录、时候追踪分析功能。DAS独立于数据库进行配置和部署，这种方式能够在不影响数据库的前提下，达到安全管理的目的。DAS支持灵活的部署模式，包括旁路和多级部署模式。</p>
+</li>
+<li><p>集中日志审计<br>大量网络设备、安全设备、应用系统等每天会产生大量不同格式的日志，且分散存储在不同的位置，企业无法通过人工去分析管理日志，无法及时识别针对信息系统的入侵攻击、内部违规等信息。</p>
+<p>绿盟安全审计系统-日志审计(NSFOCUS SAS[L])包含日志采集、日志管理、资产管理、事件告警、报表管理、系统管理、用户管理以及统计管理等八大核心功能。</p>
+</li>
+<li><p>核心交换机 （部署APT防护产品）<br>核心交换机与汇聚交换机与普通交换机最大的区别在于它们并不是交换机的某一种类型，而是根据它们的职能来进行的区分。从概念上来讲，部署于核心层的网络交换机就叫核心交换机。同理部署于汇聚层的交换机便叫汇聚交换机。若要了解这两种交换机便要先了解什么是核心层与汇聚层。</p>
+</li>
+<li><p><strong>核心层</strong><br>核心层顾名思义是整个网络布局的核心主干部分，承受、汇聚着所有传输流量，起管理作用，是网络性能的主要保障。核心层除了核心交换机外，还有路由器、防火墙等设备。其主要功能是为汇聚层设备提供高速的传输和优化。是网络部署中不可或缺的一部分。</p>
+</li>
+<li><p>汇聚层<br>汇聚层主要用来减轻核心层设备的负荷，起着上传下达的作用，具有实施策略、安全、工作组接入、虚拟局域网（VLAN）之间的路由、源地址或目的地址过滤等多种功能。 汇聚层在实际的应用中很容易被忽略，尤其是在短距离传输中，因核心层具有足够的接入可与接入层直接进行连接。我们常见的二层网络构架便是这种连接模式，可在一定程度上节省布网以及后期的维护成本。<br><em><a href="http://wemedia.ifeng.com/65684541/wemedia.shtml" target="_blank" rel="noopener">http://wemedia.ifeng.com/65684541/wemedia.shtml</a></em></p>
+</li>
+<li><p>网络中“旁路”<br>设备工作在旁路模式下时，仅对流量进行统计、扫描或者记录，并不对流量进行转发，同时，网络流量也不会受到设备本身故障的影响，所以，对于仅有审计需求的情况，使用旁路模式将会更加有效合理。<code>http://docs.hillstonenet.com/cn/Content/3_Deploy_Your_Device/tap_mode.htm</code>    </p>
+</li>
+<li><p>漏洞扫描设备</p>
+</li>
+<li><p>屏蔽机房<br>屏蔽机房能够实现的功能：<br>电磁屏蔽室的功能有许多，但是我们具体知道它的功能的人却不是很多，屏蔽室的功能：</p>
+<ol>
+<li>阻断室内电磁辐射向外界扩散，强烈的电磁辐射源应予以屏蔽隔离，防止干扰其他电子、电气设备正常工作甚至损害工作人员身体健康。</li>
+<li>防止电子通信设备信息泄漏，确保信息安全，电子通信信号会以电磁辐射的形式向外界传播，敌方利用监测设备即可进行截获还原，电磁屏蔽室是确保信息安全的有效措施。</li>
+<li>隔离外界电磁干扰，保证室内电子、电气设备正常工作，特别是在电子元件、电器设备的计量、测试工作中，利用电磁屏蔽室（或暗室）模拟理想电磁环境，提高检测结果的准确度。</li>
+<li>军事指挥通信要素必须具备抵御敌方电磁干扰的能力，在遭到电磁干扰攻击甚至核爆炸等极端情况下，结合其他防护要素，保护电子通信设备不受毁损、正常工作，电磁脉冲防护室就是在电磁屏蔽室的基础上，结合军事领域电磁脉冲防护的特殊要求研制开发的特殊产品。</li>
+</ol>
+</li>
+<li><p>IPS和IDS<br>IDS（Intrusion Detection Systems） 的概念：简称“入侵检测系统”。从专业的角度讲就是依照一定的安全策略，对网络、系统的运行状况进行监视，尽可能发现各种攻击企图、攻击行为或者攻击结果，以保证网络系统资源的机密性、完整性和可用性。<br>IPS （Intrusion Prevention System）的概念：简称“入侵防御系统”。IPS位于防火墙和网络的设备之间，对入网的数据包进行检测，确定这种数据包的真正用途，，如果检测到攻击，IPS会在这种攻击扩散到网络的其它地方之前阻止这个恶意的通信。<br>区别和联系：<br>IDS是运行于检测网络的旁路，属于并联。IPS是串联在网络中，<br>IDS只检测数据包，IPS将数据包整合成数据流，逐字节进行过滤分析，符合特征数据将其丢弃。<br>IPS具有检测已知和未知攻击并具有成功防止攻击的能力而IDS没有<br>IDS的局限性是不能反击网络攻击，因为IDS传感器基于数据包嗅探技术，只能眼睁睁地看着网络信息流过。IPS可执行IDS相同的分析，因为他们可以插入网内，装在网络组件之间，而且他们可以阻止恶意活动。<br>入侵检测系统的核心价值在于通过对全网信息的分析,了解信息系统的安全状况,进而指导信息系统安全建设目标以及安全策略的确立和调整,而入侵防御系统的核心价值在于安全策略的实施—对黑客行为的阻击;入侵检测系统需要部署在网络内部,监控范围可以覆盖整个子网,包括来自外部的数据以及内部终端之间传输的数据,入侵防御系统则必须部署在网络边界,抵御来自外部的入侵,对内部攻击行为无能为力。</p>
+</li>
+<li><p>NAC<br>思科网络准入控制 (NAC) 是一项由思科发起、多家厂商参加的计划，其宗旨是防止病毒和蠕虫等新兴黑客技术对企业安全造成危害。借助NAC，客户可以只允许合法的、值得信任的端点设备（例如PC、服务器、PDA）接入网络，而不允许其它设备接入。</p>
+</li>
+<li><p>三层发网络结构（核心、汇聚、接入）<br>三层网络结构是采用层次化架构的三层网络。三层网络架构采用层次化模型设计，即将复杂的网络设计分成几个层次，每个层次着重于某些特定的功能，这样就能够使一个复杂的大问题变成许多简单的小问题。三层网络架构设计的网络有三个层次：核心层（网络的高速交换主干）、汇聚层（提供基于策略的连接）、接入层 （将工作站接入网络）。<br>核心层：核心层是网络的高速交换主干，对整个网络的连通起到至关重要的作用。核心层应该具有如下几个特性：可靠性、高效性、冗余性、容错性、可管理性、适应性、低延时性等。在核心层中，应该采用高带宽的千兆以上交换机。因为核心层是网络的枢纽中心，重要性突出。核心层设备采用双机冗余热备份是非常必要的，也可以使用负载均衡功能，来改善网络性能。网络的控制功能最好尽量少在骨干层上实施。核心层一直被认为是所有流量的最终承受者和汇聚者，所以对核心层的设计以及网络设备的要求十分严格。核心层设备将占投资的主要部分。<br>汇聚层：汇聚层是网络接入层和核心层的“中介”，就是在工作站接入核心层前先做汇聚，以减轻核心层设备的负荷。汇聚层必须能够处理来自接入层设备的所有通信量，并提供到核心层的上行链路，因此汇聚层交换机与接入层交换机比较，需要更高的性能，更少的接口和更高的交换速率。汇聚层具有实施策略、安全、工作组接入、虚拟局域网（VLAN）之间的路由、源地址或目的地址过滤等多种功能。在汇聚层中，应该采用支持三层交换技术和VLAN的交换机，以达到网络隔离和分段的目的。<br>接入层：通常将网络中直接面向用户连接或访问网络的部分称为接入层，接入层目的是允许终端用户连接到网络，因此接入层交换机具有低成本和高端口密度特性。我们在接入层设计上主张使用性能价格比高的设备。接入层是最终用户(教师、学生) 与网络的接口，它应该提供即插即用的特性，同时应该非常易于使用和维护，同时要考虑端口密度的问题。<br>接入层为用户提供了在本地网段访问应用系统的能力，主要解决相邻用户之间的互访需求，并且为这些访问提供足够的带宽，接入层还应当适当负责一些用户管理功能（如地址认证、用户认证、计费管理等），以及用户信息收集工作（如用户的IP地址、MAC地址、访问日志等）。<br>为了方便管理、提高网络性能，大中型网络应按照标准的三层结构设计。但是，对于网络规模小，联网距离较短的环境，可以采用“收缩核心”设计。忽略汇聚层，核心层设备可以直接连接接入层，这样一定程度上可以省去部分汇聚层费用，还可以减轻维护负担，更容易监控网络状况。我们单位多年来，一直采用“收缩核心”网络架构，运行良好。<br>*原文：<a href="https://blog.csdn.net/kingmax54212008/article/details/46136199" target="_blank" rel="noopener">https://blog.csdn.net/kingmax54212008/article/details/46136199</a> *</p>
+</li>
+<li><p>AC和AP（网络覆盖）<br>什么是AC？<br>无线控制器是一种网络设备，用来集中化控制局域网内可控的无线AP，是一个无线网络的核心，负责管理无线网络中的所有无线AP，对AP管理包括：下发配置、修改相关配置参数、射频智能管理、接入安全控制等。（目前市面流通的所有AC和AP都是相同厂商的才能相互管理）<br> 区别和联系：<code>https://blog.csdn.net/wangzhen_csdn/article/details/76599754</code>  </p>
+</li>
+<li><p>UTM（统一威胁管理，也叫一体化安全网关）<br>UTM属于安全边界产品</p>
+</li>
+<li><p>深信服AC系列<br>深信服是上网行为管理产品品类的创始者，在2005年最早开创了上网行为管理的市场<br>深信服AC系列产品的功能:</p>
+<ol>
+<li><p>防止带宽资源滥用<br> 深信服AC系列上网行为管理产品通过基于应用类型、网站类别、文件类型、用户/用户组、时间段等的细致带宽分配策略限制P2P、在线视频、大文件下载等不良应用所占用的带宽，保障OA、ERP等办公应用获得足够的带宽支持，提升上网速度和网络办公应用的使用效率。</p>
+</li>
+<li><p>防止无关网络行为影响工作效率<br> 深信服AC系列上网行为管理产品可基于用户/用户组、应用、时间等条件的上网授权策略可以精细管控所有与工作无关的网络行为，并可根据各组织不同要求进行授权的灵活调整，包括基于不同用户身份差异化授权、智能提醒等。</p>
+</li>
+<li><p>记录上网轨迹满足法规要求<br> 帮助组织详尽记录用户的上网轨迹，做到网络行为有据可查，满足组织对网络行为记录的相关要求、规避可能的法规风险。</p>
+</li>
+<li><p>管控外发信息，降低泄密风险<br> 产品充分考虑网络使用中的主动泄密、被动泄密行为，从事前防范、事中告警、事后追踪等多方面防范泄密，为组织保护信息资产安全，降低网络风险。</p>
+</li>
+<li><p>掌握组织动态、优化员工管理<br> 深信服AC系列上网行为管理产品通过风险智能报表来自动发现存在离职风险或有工作效率问题的员工，并通过关键字报表和热贴报表来反映员工思想动态。风险智能报表能够自动提示管理者关注离职倾向、泄密风险、工作效率降低等员工管理风险，而关键字报表和热贴排行等报表将有助于组织深入了解员工的思想动态，并以此为基础实施组织文化建设、制度改进等针对性措施，从而提高员工管理水平。</p>
+</li>
+<li><p>为网络管理与优化提供决策依据<br> 产品提供了丰富的网络可视化报表，能够提供详细报告让管理者清晰掌握互联网流量的使用情况，找到造成网络故障的原因和网络瓶颈所在，从而对精细化管理网络并持续加以优化提供了有效依据。</p>
+</li>
+<li><p>防止病毒木马等网络风险<br> 通过部署AC系列上网行为管理产品，利用其内置的危险插件和恶意脚本过滤等创新技术过滤挂马网站的访问、封堵不良网站等，从源头上切断病毒、木马的潜入，再结合终端安全强度检查与网络准入、DOS防御、ARP欺骗防护等多种安全手段，实现立体式安全护航，确保组织安全上网。</p>
+</li>
+<li><p>低成本且有效推行IT制度 深信服AC系列上网行为管理产品能够实现用户网络权限的细致分配以及带宽的优化管理，通过事前精细规范、事中智能提醒、事后报表呈现等手段实现有效管理；通过将是否具备上网权限与用户对IT制度的遵从情况进行绑定，强制要求用户遵从组织IT制度里的各项细则规定（如必须安装指定的杀毒软件或桌面管理软件等）</p>
+</li>
+<li><p>过滤恶意网页，防范恶意攻击</p>
+<p> 第二代AC内置了庞大的恶意网址库，并且实时更新。它通过检测恶意脚本的写注册表、写文件、系统调用等危险行为，以此过滤恶意脚本。独有专利工具插件签名合法性、有效期、插件名称等校验来自网站的插件并过滤，避免无安全防护的终端感染，被劫持，提升内网的安全。</p>
+</li>
+<li><p>URL灵活全面搜集<br>内置预分类URL地址库，数据量高达两千多万条，智能识别技术可自动提取未知网页URl特征、内容特征、代码特征等信息后自动识别和分类，实现未知网页的管控，特有的云系统在设置URL上报后，可自动反馈不在库内的URL至厂家，进一步丰富静态URL库。</p>
+</li>
+</ol>
+</li>
+<li><p>常见安全设备：防火墙 ips waf 上网行为管理 堡垒机（运维审计） 日志审计   </p>
+</li>
+</ol>
+<h4 id="攻击手段"><a href="#攻击手段" class="headerlink" title="攻击手段"></a>攻击手段</h4><ol>
+<li><p>DNS放大攻击<br> DNS放大攻击原理<code>http://blog.sina.com.cn/s/blog_90bb1f200101iazl.html</code></p>
+</li>
+<li><p>地址欺骗<br> ARP欺骗又被称为ARP毒化，属于中间人攻击。在每台主机都有一个ARP缓存表，缓存表中记录了IP地址与MAC地址的对应关系，而局域网数据传输依靠的是MAC地址。在ARP缓存表机制存在一个缺陷，就是当请求主机收到ARP应答包后，不会去验证自己是否向对方主机发送过ARP请求包，就直接把这个返回包中的IP地址与MAC地址的对应关系保存进ARP缓存表中，如果原有相同IP对应关系，原有的则会被替换。<br> 危害 :局域网之间主机通信会收到影响，如果是网关欺骗，上互联网也会受影响<br> 黑客利用ARP欺骗可以窃取用户敏感信息、挂马等<br> 防范：</p>
+<ol>
+<li>在主机绑定网关MAC与IP地址为静态（默认为动态），命令：arp -s 网关IP 网关MAC</li>
+<li>在网关绑定主机MAC与IP地址</li>
+<li>使用ARP防火墙</li>
+</ol>
+</li>
+</ol>
+</div><div class="tags"><a href="/tags/%E7%AD%89%E4%BF%9D%E6%B5%8B%E8%AF%84/">等保测评</a></div><div class="post-nav"><a class="pre" href="/2019/04/16/%E7%AD%89%E7%BA%A7%E4%BF%9D%E6%8A%A4%E5%B7%A5%E4%BD%9C%E9%80%9F%E8%AF%86%E7%A7%98%E7%B1%8D/">等级保护工作速识秘籍</a><a class="next" href="/2019/03/15/%E5%86%99%E4%BD%9C%E5%A4%A7%E7%BA%B2/">计划</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="https://neoeo.github.io"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/linux/" style="font-size: 15px;">linux</a> <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" style="font-size: 15px;">防火墙</a> <a href="/tags/%E7%AD%89%E4%BF%9D%E6%B5%8B%E8%AF%84/" style="font-size: 15px;">等保测评</a> <a href="/tags/%E6%94%BB%E5%87%BB/" style="font-size: 15px;">攻击</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/12/18/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/05/%E7%BC%93%E5%86%B2%E5%8C%BA%E6%BA%A2%E5%87%BA%E7%9A%84%E5%8D%B1%E5%AE%B3/">缓冲区溢出的危害</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/05/%E4%B8%8B%E4%B8%80%E4%BB%A3%E9%98%B2%E7%81%AB%E5%A2%99%E7%9A%84%E4%BC%98%E5%8A%BF/">下一代防火墙的优势</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/24/firewall-cmd/">firewall-cmd</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/16/%E7%AD%89%E7%BA%A7%E4%BF%9D%E6%8A%A4%E5%B7%A5%E4%BD%9C%E9%80%9F%E8%AF%86%E7%A7%98%E7%B1%8D/">等级保护工作速识秘籍</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/15/%E7%AD%89%E4%BF%9D%E6%B5%8B%E8%AF%84%EF%BC%88%E4%B8%80%EF%BC%89/">等保测评（一）</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/03/15/%E5%86%99%E4%BD%9C%E5%A4%A7%E7%BA%B2/">计划</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/03/13/tor%E5%8A%A0%E5%89%8D%E7%BD%AE%E4%BB%A3%E7%90%86%E6%B5%81%E9%87%8F%E7%A4%BA%E6%84%8F%E5%9B%BE/">tor加前置代理流量示意图</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/03/13/%E8%8C%85%E5%B1%8B%E4%B8%BA%E7%A7%8B%E9%A3%8E%E6%89%80%E7%A0%B4%E6%AD%8C/">茅屋为秋风所破歌</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2019 <a href="/." rel="nofollow">Neo的博客.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
